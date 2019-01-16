@@ -1,0 +1,356 @@
+html {
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0; }
+
+article, aside, footer, header, nav, section {
+  display: block; }
+
+h1 {
+  font-size: 2em;
+  margin: .67em 0; }
+
+figcaption, figure, main {
+  display: block; }
+
+figure {
+  margin: 1em 40px; }
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible; }
+
+pre {
+  font-family: monospace,monospace;
+  font-size: 1em; }
+
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects; }
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted; }
+
+b, strong {
+  font-weight: inherit; }
+
+b, strong {
+  font-weight: bolder; }
+
+code, kbd, samp {
+  font-family: monospace,monospace;
+  font-size: 1em; }
+
+dfn {
+  font-style: italic; }
+
+mark {
+  background-color: #ff0;
+  color: #000; }
+
+small {
+  font-size: 80%; }
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -.25em; }
+
+sup {
+  top: -.5em; }
+
+audio, video {
+  display: inline-block; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+img {
+  border-style: none; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+button, input, optgroup, select, textarea {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0; }
+
+button, input {
+  overflow: visible; }
+
+button, select {
+  text-transform: none; }
+
+button, html [type=button], [type=reset], [type=submit] {
+  -webkit-appearance: button; }
+
+button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+fieldset {
+  padding: .35em .75em .625em; }
+
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal; }
+
+progress {
+  display: inline-block;
+  vertical-align: baseline; }
+
+textarea {
+  overflow: auto; }
+
+[type=checkbox], [type=radio] {
+  box-sizing: border-box;
+  padding: 0; }
+
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+  height: auto; }
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px; }
+
+[type=search]::-webkit-search-cancel-button, [type=search]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit; }
+
+details, menu {
+  display: block; }
+
+summary {
+  display: list-item; }
+
+canvas {
+  display: inline-block; }
+
+template {
+  display: none; }
+
+[hidden] {
+  display: none; }
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0; }
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.visually-hidden {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px); }
+
+header {
+  background: red;
+  height: 100px;
+  margin-bottom: 40px;
+  border-bottom: black 5px solid;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  header .logo {
+    width: 30%; }
+  header .pokeball {
+    height: 80px;
+    width: 80px; }
+
+body {
+  background-image: url(./assets/background_1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh; }
+  body main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+    body main .leftDex {
+      background-color: red;
+      border-right: 7px solid black;
+      height: 80vh;
+      width: 35%;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px; }
+      body main .leftDex .dots {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start; }
+        body main .leftDex .dots .blueDot {
+          background-image: radial-gradient(circle, #00d7f3, #44dcf4, #61e0f5, #78e5f7, #8ce9f8);
+          width: 60px;
+          height: 60px;
+          border-radius: 100px;
+          margin: 20px;
+          border: 6px solid white;
+          margin: 2px; }
+        body main .leftDex .dots .yellowDot {
+          width: 10px;
+          height: 10px;
+          box-shadow: 0, 0, white;
+          color: yellow;
+          margin: 2px;
+          padding: 8px; }
+        body main .leftDex .dots .redDot {
+          width: 10px;
+          height: 10px;
+          border-radius: 100px;
+          color: red;
+          margin: 2px;
+          padding: 8px; }
+        body main .leftDex .dots .greenDot {
+          width: 10px;
+          height: 10px;
+          color: green;
+          margin: 1px;
+          padding: 8px; }
+        body main .leftDex .dots .littledot {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-content: center; }
+      body main .leftDex .line {
+        border-bottom: 10px solid black;
+        border-radius: 0 0 240px 90%/60px; }
+      body main .leftDex .answerScreen {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        height: 35%;
+        background-color: white;
+        border: lightgrey solid 15px;
+        margin: 0 auto;
+        position: relative;
+        top: 20px;
+        font-family: 'pokemon-font', monospace;
+        -webkit-font-smoothing: none;
+        font-size: 14px;
+        font-weight: 300; }
+        body main .leftDex .answerScreen h3 {
+          font-weight: 300; }
+        body main .leftDex .answerScreen button {
+          border: none;
+          font-weight: 500; }
+        body main .leftDex .answerScreen li {
+          padding: 3px;
+          letter-spacing: 1.2px; }
+    body main .rightDex {
+      background-color: red;
+      border-left: 10px solid black;
+      height: 80vh;
+      width: 35%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center; }
+      body main .rightDex .pokeDataScreen {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        height: 27%;
+        background-color: limegreen;
+        -webkit-font-smoothing: none;
+        font-family: 'pokemon-font', monospace;
+        margin: 0 auto;
+        position: relative;
+        top: 40px;
+        border: 1px solid black; }
+        body main .rightDex .pokeDataScreen li {
+          padding: 3px;
+          letter-spacing: 1.2px; }
+      body main .rightDex .blueButtonHolder {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 70%;
+        margin: 0 auto; }
+        body main .rightDex .blueButtonHolder .blueBox {
+          background-color: blue;
+          width: 18%;
+          position: relative;
+          top: 90px;
+          height: 50px;
+          border-radius: 10px;
+          margin: 2px; }
+      body main .rightDex .userInput {
+        margin: 0 auto;
+        position: relative;
+        top: 250px; }
+      body main .rightDex .pokeButtons {
+        margin: 0 auto;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        position: relative;
+        top: 0;
+        left: 0; }
+        body main .rightDex .pokeButtons .yellowDot2 {
+          color: yellow;
+          height: 20px;
+          width: 20px; }
+        body main .rightDex .pokeButtons .greenDot2 {
+          color: green;
+          height: 20px;
+          width: 20px; }
+
+.answerScreen li {
+  list-style: none; }
+
+.pokeDataScreen li {
+  list-style: none; }
+
+.instructions {
+  position: absolute;
+  display: none;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  background: white; }

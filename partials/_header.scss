@@ -1,0 +1,18 @@
+header{
+    background:red;
+    height: 100px;
+    margin-bottom: 40px;
+    border-bottom: black 5px solid;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+
+    .logo{
+        width: 30%;
+    }
+
+    .pokeball{
+        height: 80px;
+        width: 80px;
+    }
+}

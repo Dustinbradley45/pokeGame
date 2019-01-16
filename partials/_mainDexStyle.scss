@@ -1,0 +1,211 @@
+body{
+        background-image: url(./assets/background_1.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 90vh;
+
+main{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items:center;
+
+    .leftDex {
+        background-color:red;
+        border-right: 7px solid black;
+        height:80vh;
+        width:35%;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+
+      .dots{
+          display:flex;
+          flex-direction:row;
+          justify-content: flex-start;
+
+      .blueDot {
+         background-image:radial-gradient(circle, #00d7f3, #44dcf4, #61e0f5, #78e5f7, #8ce9f8);;
+         width: 60px;
+         height: 60px;
+         border-radius:100px;
+         margin: 20px;
+         border: 6px solid white;
+         margin: 2px;
+      }
+
+      .yellowDot{
+          width: 10px;
+          height: 10px;
+          box-shadow: 0, 0, white;
+          color: yellow;
+          margin:2px;
+          padding: 8px;
+       }
+      .redDot{
+          width: 10px;
+          height: 10px;
+          border-radius: 100px;
+          color: red;
+           margin:2px;
+           padding: 8px;
+      }
+      .greenDot{
+          width: 10px;
+          height: 10px;
+        color: green;
+           margin: 1px;
+           padding: 8px;
+      }
+     .littledot{
+         display:flex;
+         flex-direction:row;
+         justify-content: flex-start;
+         align-content: center;
+
+      }
+    }
+      .line {
+          border-bottom: 10px solid black;
+         border-radius: 0 0 240px 90%/60px;
+
+        
+      }
+
+      .answerScreen {
+          display:flex;
+            flex-direction:column;
+            justify-content: center;
+            align-items: center; 
+            width: 70%;
+            height: 35%;
+            background-color:white;
+            border: lightgrey solid 15px;
+            margin: 0 auto;
+            position:relative;
+            top:20px;
+            font-family: 'pokemon-font', monospace;
+            -webkit-font-smoothing: none;
+            font-size:14px;
+            font-weight: 300;
+
+            h3{
+                font-weight: 300; 
+            }
+            
+            button {
+               border:none;
+               font-weight: 500;
+
+            }
+
+
+             li{
+                padding: 3px;
+                letter-spacing: 1.2px;
+            }
+
+      }
+    }
+    .rightDex{
+        background-color:red;
+        border-left:10px solid black;
+        height:80vh;
+        width: 35%;
+        display:flex;
+        flex-direction:column;
+        justify-content: flex-start;;
+        align-items: center;
+        
+      
+        .pokeDataScreen {
+            display:flex;
+            flex-direction:column;
+            justify-content: center;
+            align-items: center; 
+            width: 70%;
+            height: 27%;
+            background-color:limegreen;
+            -webkit-font-smoothing: none;
+            font-family: 'pokemon-font', monospace;
+            margin: 0 auto;
+            position:relative;
+            top:40px;
+            border: 1px solid black;
+
+            li{
+                padding: 3px;
+                letter-spacing: 1.2px;
+            }
+        }
+        
+        .blueButtonHolder{
+            display:flex;
+            flex-direction: row;
+            justify-content:center;
+            align-items:center;
+            flex-wrap:wrap;
+            width: 70%;
+            margin:0 auto;
+
+            .blueBox{
+                background-color:blue;
+                width: 18%;
+                position:relative;
+                top:90px;
+                height: 50px;
+                border-radius: 10px;
+                margin:2px;
+            }
+        }
+        .userInput{
+            margin:0 auto;
+            position:relative;
+            top: 250px
+
+           
+        }
+
+    .pokeButtons{
+        margin: 0 auto;
+        position:relative;
+        display:flex;
+        flex-direction:row;
+        justify-content: flex-start;
+
+        .smallRound{}
+        position:relative;
+        top: 0;
+        left: 0;
+       
+        
+        
+        .yellowDot2{
+            color:yellow;
+            height: 20px;
+            width: 20px;
+         
+
+        }
+        .greenDot2{
+            color:green;
+            height: 20px;
+            width: 20px;
+        }
+    }
+
+}
+
+        // <div class="pokeButtons">
+        //         <div class="smallRound">
+        //             <i class="fas fa-circle yellowDot2"></i>
+        //             <i class="fas fa-circle greenDot2"></i>
+        //         </div>
+         
+        //         <div class="ovalButtons">
+        //             <div class="greenOval">
+        //             </div>
+        //             <div class="orangeOval">
+        //             </div>
+        //         </div>
+        //     </div>
+}}
