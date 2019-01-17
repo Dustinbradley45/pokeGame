@@ -10,26 +10,27 @@
 
 .instructions{
     position:absolute;
-    display:none;
+    // display:none;
     top:0;
     bottom:0;
     left:0;
     right:0;
     display:flex;
     flex-direction:column;
-    justify-content: center;
+    justify-content: center;;
     align-items: center;
     z-index:1;
     background:black;
+    height: 100vh;
 
     .pokeBallImg{
         position:relative;
+        width:75%;
         top:90px;
-        right:20px;
+        left: 40px;
         animation:rotation 4s infinite linear;
+        margin:0 auto;
      
-        
-
     }
 
     .instructionTitle{
@@ -40,6 +41,47 @@
         left:0;
         right:0;
         margin:0 auto;
-        border-radius:50% 50% -50% 50% ;
+        
     }
+
+    .pikaContainer{
+        position:relative;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+        height: 100px;
+        width:100%;;
+        display:flex;
+        flex-direction: row;
+        justify-content:space-between;
+        align-content:center;
+
+        #pikaLeft{
+            position:relative;
+            bottom: 25px;
+            left:0;
+            width: 80px;
+        }
+
+        #pikaRight{
+            position:relative;
+            bottom:25px;
+            right:0;
+            width:80px;
+           
+        }
+
+    }
+            .startGame{
+                margin:0 auto;
+                position:relative;
+                left:31%;
+                margin-top: 2%;
+              ;
+
+
+              
+            }
+
 }

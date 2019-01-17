@@ -12,11 +12,13 @@ main{
 
     .leftDex {
         background-color:red;
-        border-right: 7px solid black;
+        border-right: 2px solid black;
         height:80vh;
         width:35%;
       border-top-left-radius: 20px;
       border-bottom-left-radius: 20px;
+      box-shadow: -10px 10px 0px darkred;
+     
 
       .dots{
           display:flex;
@@ -106,15 +108,54 @@ main{
 
       }
     }
+    .dexSpine{
+        background-color:darkred;
+        width: 40px;
+        height:80vh;
+        display:flex;
+        flex-direction:column;
+        justify-content: space-evenly;
+        align-items: center;
+        
+        .hinge1{
+            background-color:red;
+            width: 40px;
+            height: 80px;
+            position:relative;
+          
+        }
+        .hinge2{
+        background-color:red;
+            width: 40px;
+            height: 80px;
+            position:relative;
+        }
+        .hinge3{
+            background-color:red;
+            width: 40px;
+            height: 80px;
+            position:relative;
+        }
+        .hinge4{
+            background-color:red;
+            width: 40px;
+            height: 80px;
+            position:relative;
+        }
+
+    }
+
     .rightDex{
         background-color:red;
-        border-left:10px solid black;
+          border-left: 2px solid black;
         height:80vh;
         width: 35%;
         display:flex;
         flex-direction:column;
         justify-content: flex-start;;
         align-items: center;
+        box-shadow:10px 10px 0px darkred;
+        
         
       
         .pokeDataScreen {
@@ -155,6 +196,13 @@ main{
                 height: 50px;
                 border-radius: 10px;
                 margin:2px;
+                box-shadow: 5px 5px 0px darkblue;
+                transition: box-shadow, 4s, ease-in;
+
+             &:active{
+                    box-shadow: 0px 0px 0px darkblue;
+                    top:95px;
+                }
             }
         }
         .userInput{
@@ -172,27 +220,81 @@ main{
         flex-direction:row;
         justify-content: flex-start;
 
-        .smallRound{}
-        position:relative;
-        top: 0;
-        left: 0;
-       
+        .smallRound{
+            position:relative;
+            top: 120px;
+            right: 70px;
+            
         
-        
-        .yellowDot2{
-            color:yellow;
-            height: 20px;
-            width: 20px;
-         
 
-        }
-        .greenDot2{
-            color:green;
-            height: 20px;
-            width: 20px;
-        }
+            .yellowDot2{
+                color:yellow;
+                height: 20px;
+                width: 20px;
+               
+            }
+            .greenDot2{
+                color:green;
+                height: 20px;
+                width: 20px;
+             
+            }
+        }  
+        .ovalButtons{
+            position:relative;
+            top:120px;
+            left:70px;
+            display:flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items:center;
+
+            .greenOval{
+                background-color:green;
+                width:40px;
+                height: 15px;
+                border-radius: 100px;
+                margin: 5px;
+                transition: box-shadow, 1s, ease-in;
+                box-shadow: 2px 2px 0px darkgreen;
+                
+                &:active{
+                    box-shadow: 0px 0px 0px darkgreen;
+                     top:92px;
+                }
+
+            }
+
+            .orangeOval{
+                background-color:orange;
+                width: 40px;
+                height:15px;
+                border-radius: 100px;
+                 margin: 5px;
+                box-shadow: 2px 2px 0px darkorange;
+
+                &:active{
+                    box-shadow: 0px 0px 0px darkorange;
+                      top:92px;
+                }
+            }
+            .leftRightButtons{
+               
+                
+            }
+        } 
     }
-
+    
+    . fa-caret-left{
+        width: 20px;
+        position:absolute;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+        background-color:grey;
+        color:red;
+    }
 }
 
         // <div class="pokeButtons">
