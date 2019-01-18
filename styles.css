@@ -219,7 +219,7 @@ body {
           border-radius: 100px;
           margin: 20px;
           border: 6px solid white;
-          margin: 2px; }
+          margin: 5px; }
         body main .leftDex .dots .yellowDot {
           width: 10px;
           height: 10px;
@@ -309,7 +309,9 @@ body {
       flex-direction: column;
       justify-content: flex-start;
       align-items: center;
-      box-shadow: 10px 10px 0px darkred; }
+      box-shadow: 10px 10px 0px darkred;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px; }
       body main .rightDex .pokeDataScreen {
         display: flex;
         flex-direction: column;
@@ -351,7 +353,15 @@ body {
       body main .rightDex .userInput {
         margin: 0 auto;
         position: relative;
-        top: 250px; }
+        top: 220px; }
+      body main .rightDex .userInputBox {
+        background-color: lightgrey;
+        padding: 2px;
+        font-family: 'pokemon font', monospace; }
+        body main .rightDex .userInputBox::placeholder {
+          font-family: 'pokemon font', monospace; }
+        body main .rightDex .userInputBox .userSubmit {
+          font-family: 'pokemon font', monospace; }
       body main .rightDex .pokeButtons {
         margin: 0 auto;
         position: relative;
@@ -379,31 +389,88 @@ body {
           justify-content: flex-start;
           align-items: center; }
           body main .rightDex .pokeButtons .ovalButtons .greenOval {
+            position: relative;
             background-color: green;
             width: 40px;
             height: 15px;
             border-radius: 100px;
             margin: 5px;
             transition: box-shadow, 1s, ease-in;
-            box-shadow: 2px 2px 0px darkgreen; }
+            box-shadow: 1px 1px 0px darkgreen; }
             body main .rightDex .pokeButtons .ovalButtons .greenOval:active {
               box-shadow: 0px 0px 0px darkgreen;
-              top: 92px; }
+              top: 1px; }
           body main .rightDex .pokeButtons .ovalButtons .orangeOval {
+            position: relative;
             background-color: orange;
             width: 40px;
             height: 15px;
             border-radius: 100px;
             margin: 5px;
-            box-shadow: 2px 2px 0px darkorange; }
+            box-shadow: 1px 1px 0px darkorange; }
             body main .rightDex .pokeButtons .ovalButtons .orangeOval:active {
               box-shadow: 0px 0px 0px darkorange;
-              top: 92px; }
-          body main .rightDex .pokeButtons .ovalButtons .leftRightButtons .leftButton {
-            width: 20px;
-            position: absolute;
-            background-color: grey;
-            color: red; }
+              top: 1px; }
+    body main .leftRightButtons {
+      position: relative; }
+      body main .leftRightButtons .leftButton {
+        width: 45px;
+        height: 30px;
+        position: absolute;
+        font-size: 28px;
+        padding-left: 4px;
+        border-radius: 5px;
+        top: 150px;
+        bottom: 0;
+        left: -170px;
+        border-right: black 1px solid;
+        right: 0;
+        background-color: grey;
+        color: red;
+        box-shadow: 2px 2px 0px darkgrey; }
+        body main .leftRightButtons .leftButton:active {
+          top: 152px;
+          box-shadow: 0px 0px 0px darkgrey; }
+      body main .leftRightButtons .rightButton {
+        width: 45px;
+        height: 30px;
+        position: absolute;
+        font-size: 28px;
+        padding-left: 30px;
+        border-radius: 5px;
+        top: 150px;
+        bottom: 0;
+        left: -125px;
+        right: 0;
+        background-color: grey;
+        color: red;
+        box-shadow: 2px 2px 0px darkgrey; }
+        body main .leftRightButtons .rightButton:active {
+          top: 152px;
+          box-shadow: 0px 0px 0px darkgrey; }
+    body main .yellowArrowButtonContainer {
+      position: relative; }
+      body main .yellowArrowButtonContainer .yellowArrowButton {
+        position: relative;
+        top: 148px;
+        bottom: 0;
+        right: 0;
+        left: 95px;
+        width: 30px;
+        height: 30px;
+        background-color: yellow;
+        color: red;
+        border-radius: 100px;
+        padding-left: 7px;
+        font-size: 30px;
+        box-shadow: 1px 1px 0px darkgoldenrod; }
+        body main .yellowArrowButtonContainer .yellowArrowButton:active {
+          box-shadow: 0px 0px 0px darkgoldenrod;
+          top: 149px; }
+    body main .darkRedWrapper {
+      background-color: #c13725;
+      border-top-left-radius: 20px;
+      padding-bottom: 20px; }
 
 .answerScreen li {
   list-style: none; }

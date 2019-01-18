@@ -32,7 +32,8 @@ main{
          border-radius:100px;
          margin: 20px;
          border: 6px solid white;
-         margin: 2px;
+         margin: 5px;
+
       }
 
       .yellowDot{
@@ -155,6 +156,8 @@ main{
         justify-content: flex-start;;
         align-items: center;
         box-shadow:10px 10px 0px darkred;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
         
         
       
@@ -208,11 +211,22 @@ main{
         .userInput{
             margin:0 auto;
             position:relative;
-            top: 250px
-
-           
+            top: 220px;
+            
+            
         }
-
+        .userInputBox{
+        background-color: lightgrey;
+        padding:2px;
+         font-family:'pokemon font', monospace;
+        
+        &::placeholder{
+            font-family:'pokemon font', monospace;
+        }
+        button{
+                font-family:'pokemon font', monospace;
+            
+        }
     .pokeButtons{
         margin: 0 auto;
         position:relative;
@@ -250,52 +264,117 @@ main{
             align-items:center;
 
             .greenOval{
+                position:relative;
                 background-color:green;
                 width:40px;
                 height: 15px;
                 border-radius: 100px;
                 margin: 5px;
                 transition: box-shadow, 1s, ease-in;
-                box-shadow: 2px 2px 0px darkgreen;
+                box-shadow: 1px 1px 0px darkgreen;
                 
                 &:active{
                     box-shadow: 0px 0px 0px darkgreen;
-                     top:92px;
+                     top:1px;
                 }
 
             }
 
             .orangeOval{
+                position:relative;
                 background-color:orange;
                 width: 40px;
                 height:15px;
                 border-radius: 100px;
                  margin: 5px;
-                box-shadow: 2px 2px 0px darkorange;
+                box-shadow: 1px 1px 0px darkorange;
 
                 &:active{
                     box-shadow: 0px 0px 0px darkorange;
-                      top:92px;
+                      top:1px;
                 }
             }
-            .leftRightButtons{
-               
-                
-            }
-        } 
-    }
+            
+            
+        }
+    } 
+}
+  .leftRightButtons{
+      position:relative;
     
-    . fa-caret-left{
-        width: 20px;
+    .leftButton{
+        width: 45px;
+        height: 30px;
         position:absolute;
-        top:0;
+        font-size: 28px;
+        padding-left: 4px;
+        border-radius: 5px;
+        top:150px;
         bottom:0;
-        left:0;
+        left:-170px;
+        border-right: black 1px solid;
         right:0;
         background-color:grey;
         color:red;
+        box-shadow: 2px 2px 0px darkgrey;
+
+         &:active{
+            top:152px;
+            box-shadow: 0px 0px 0px darkgrey;
+        }
+
+    }
+    .rightButton{
+         width: 45px;
+        height: 30px;
+        position:absolute;
+        font-size: 28px;
+        padding-left: 30px;
+        border-radius: 5px;
+        top:150px;
+        bottom:0;
+        left:-125px;
+        right:0;
+        background-color:grey;
+        color:red;
+        box-shadow: 2px 2px 0px darkgrey;
+        
+        &:active{
+            top:152px;
+            box-shadow: 0px 0px 0px darkgrey;
+        }
     }
 }
+        .yellowArrowButtonContainer{
+            position:relative;
+    
+            .yellowArrowButton{
+               position:relative;
+               top:148px;
+               bottom:0;
+               right:0;
+               left:95px;
+                width: 30px;
+                height: 30px;
+                background-color:yellow;
+                color:red;
+                border-radius:100px;
+                padding-left:7px;
+                font-size:30px;
+                 box-shadow: 1px 1px 0px darkgoldenrod;
+
+                 &:active{
+                    box-shadow: 0px 0px 0px darkgoldenrod; 
+                    top:149px;
+                 }
+               
+            }
+        }
+        .darkRedWrapper{
+            background-color:#c13725;
+            border-top-left-radius:20px;
+            padding-bottom:20px;
+        }
 
         // <div class="pokeButtons">
         //         <div class="smallRound">

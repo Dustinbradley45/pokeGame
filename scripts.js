@@ -30,7 +30,6 @@ thisGame.fetchData = function (randomPokeId) {
 
 thisGame.showPokeData = function () { 
     // Adds data to the one screen
-    console.log(thisGame.currentAnswer);
     $('.pokeDataScreen').html(`<ul class='pokemonInfo'>
     <li><p>Pokemon Identification Number: ${thisGame.currentAnswer.id}</p></li>
     <li><p>Pokemon Name:${thisGame.currentAnswer.name}</p></li>
@@ -58,9 +57,10 @@ thisGame.restartSystem = function () {
     //Remove appended text
      $('.answerScreen').empty();
     $('.pokeDataScreen').empty();
+    $('.userInputBox').val('');
+   
     //create new object
     thisGame.currentAnswer = {};
-console.log(thisGame.currentAnswer)
 }
 
 
@@ -86,8 +86,10 @@ thisGame.setUpEventListeners = function () {
     //On submit, should check answer and ring either true or false; if tr
     $('.userSubmit').on('click', function () {
         let userAnswer = $('.userInputBox').val();
+
+       
         
-        if (userAnswer === thisGame.currentAnswer.name) {
+        if (userAnswer.toLowerCase() === thisGame.currentAnswer.name) {
             $('.answerScreen').html(
                 `<h3>Yes! You caught ${thisGame.currentAnswer.name}.</h3> 
                  <img src='${thisGame.currentAnswer.sprites.front_default}'>
