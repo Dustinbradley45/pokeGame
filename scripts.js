@@ -24,22 +24,21 @@ thisGame.fetchData = function (randomPokeId) {
         dataType: 'json'
     }).then(function (currentAnswer) {  
         thisGame.currentAnswer = currentAnswer;
+        console.log(thisGame.currentAnswer.id)
         thisGame.showPokeData();
     })    
 }
-
 thisGame.showPokeData = function () { 
     // Adds data to the one screen
     $('.pokeDataScreen').html(`<ul class='pokemonInfo'>
     <li><p>Pokemon Identification Number: ${thisGame.currentAnswer.id}</p></li>
-    <li><p>Pokemon Name:${thisGame.currentAnswer.name}</p></li>
     <li><p>Pokemon Type: ${thisGame.currentAnswer.types[0].type.name}</p></li>
     </ul>`);
 
 }
 
 thisGame.showPokeAnswer = function() { 
-    $('.answerScreen').html(`
+    $('.answerPopup').html(`
     <ul class='pokeAnswer'>
     <li>
     <p>Pokemon Name: ${thisGame.currentAnswer.name}</p>
@@ -89,12 +88,14 @@ thisGame.setUpEventListeners = function () {
 
        
         
+        
         if (userAnswer.toLowerCase() === thisGame.currentAnswer.name) {
             $('.answerScreen').html(
                 `<h3>Yes! You caught ${thisGame.currentAnswer.name}.</h3> 
                  <img src='${thisGame.currentAnswer.sprites.front_default}'>
                <button class='tryAgainButton'>Play Again!</button>
                 `)
+ 
             thisGame.tryAgain();
         } else {
             $('.answerScreen').html(
@@ -102,6 +103,7 @@ thisGame.setUpEventListeners = function () {
                     <img src='${thisGame.currentAnswer.sprites.front_default}'>
                     <button class='tryAgainButton'>Try Again!</button>
                     `)
+          
             thisGame.tryAgain();  
         }         
     })
@@ -114,7 +116,7 @@ $(function () {
 })
         
 thisGame.init = function () {
-    let randomPokeId = thisGame.ranNum(1, 900);
+    let randomPokeId = thisGame.ranNum(1, 150);
     thisGame.fetchData(randomPokeId);
     thisGame.setUpEventListeners(); 
     // thisGame.tryAgain();
