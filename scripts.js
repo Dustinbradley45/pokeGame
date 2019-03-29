@@ -24,7 +24,6 @@ thisGame.fetchData = function (randomPokeId) {
         dataType: 'json'
     }).then(function (currentAnswer) {  
         thisGame.currentAnswer = currentAnswer;
-        console.log(thisGame.currentAnswer.id)
         thisGame.showPokeData();
     })    
 }
@@ -36,6 +35,17 @@ thisGame.showPokeData = function () {
     </ul>`);
 
 }
+
+thisGame.showPokeDataSmall = function () {
+    // Adds data to the one screen
+    $('.instructionBox').html(`<ul class='pokemonInfo'>
+    <li><p>Pokemon Identification Number: ${thisGame.currentAnswer.id}</p></li>
+    <li><p>Pokemon Type: ${thisGame.currentAnswer.types[0].type.name}</p></li>
+    </ul>`);
+
+}
+
+
 
 thisGame.showPokeAnswer = function() { 
     $('.answerPopup').html(`
@@ -77,42 +87,63 @@ thisGame.tryAgain = function () {
 thisGame.setUpEventListeners = function () {
     
     $('.startGame').on('click', function () {
-        thisGame.showPokeData();
-        //Removes instruction screen
+        console.log($(window).width())
+    
         $('.instructions').addClass('visually-hidden');
-    }); 
+        if ($(window).width() >= 550) {
+            thisGame.showPokeData();
+            console.log("im full size")
+            //Removes instruction screen
+            // $('.instructions').addClass('visually-hidden');
+        } else {
+            thisGame.showPokeDataSmall();
+            console.log("i should be small")
+
+            $(".rightDex").css({ display: "none" })
+            $(".leftDex").animate({
+                width: "85%"
+            })
+            $(".appendWhenSmall").html(`
+            <input type="text" class="userInputBox"/>
+            <button class="userSubmit">Submit</button>`)
+            $(".userInput").css({top: "100px"})
+        }
+    })
+    
     
     //On submit, should check answer and ring either true or false; if tr
-    $('.userSubmit').on('click', function () {
-        let userAnswer = $('.userInputBox').val();
-
-       
+   
         
+    
+        $('.userSubmit').on('click', function () {
+            let userAnswer = $('.userInputBox').val();
         
-        if (userAnswer.toLowerCase() === thisGame.currentAnswer.name) {
-            $('.answerScreen').html(
-                `<h3>Yes! You caught ${thisGame.currentAnswer.name}.</h3> 
+            if (userAnswer.toLowerCase() === thisGame.currentAnswer.name) {
+                $('.answerScreen').html(
+                    `<h3>Yes! You caught ${thisGame.currentAnswer.name}.</h3> 
                  <img src='${thisGame.currentAnswer.sprites.front_default}'>
                <button class='tryAgainButton'>Play Again!</button>
                 `)
  
-            thisGame.tryAgain();
-        } else {
-            $('.answerScreen').html(
-                `<h3>Darn! ${thisGame.currentAnswer.name} got away!</h3>
+                thisGame.tryAgain();
+            } else {
+                $('.answerScreen').html(
+                    `<h3>Darn! ${thisGame.currentAnswer.name} got away!</h3>
                     <img src='${thisGame.currentAnswer.sprites.front_default}'>
                     <button class='tryAgainButton'>Try Again!</button>
                     `)
           
-            thisGame.tryAgain();  
-        }         
-    })
-}    
+                thisGame.tryAgain();
+            }
+        })
+    }
+ 
                     
 
 
 $(function () { 
     thisGame.init();
+    
 })
         
 thisGame.init = function () {

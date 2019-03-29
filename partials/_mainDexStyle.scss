@@ -1,448 +1,453 @@
-body{
-        background-image: url(./assets/background_1.png);
+body {
+    background-image: url(./assets/background_1.png);
     background-repeat: no-repeat;
-    background-size:cover;
-    height: 90vh;
+    background-size: cover;
+    height: 100vh;
 
-main{
-    display:flex;
-    flex-direction:row;
-    justify-content: center;
-    align-items:center;
+}
+    main {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
 
-    .leftDex {
-       background-image: linear-gradient(to right, #a01a0b, #ae2312, #bc2b19, #ca331f, #d93b26, #dc3c26, #df3c27, #e23d27, #da3621, #d2301b, #ca2915, #c2210f);
-        border-right: 2px solid black;
-        height:80vh;
-        width:35%;
-      border-top-left-radius: 20px;
-      border-bottom-left-radius: 20px;
-      box-shadow: -10px 10px 0px darkred;
-      position:relative;
-     
+        .leftDex {
+            background-image: linear-gradient(to right, #a01a0b, #ae2312, #bc2b19, #ca331f, #d93b26, #dc3c26, #df3c27, #e23d27, #da3621, #d2301b, #ca2915, #c2210f);
+            border-right: 2px solid black;
+            height: 80vh;
+            width: 35%;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            box-shadow: -10px 10px 0px darkred;
+            position: relative;
 
-      .dots{
-          display:flex;
-          flex-direction:row;
-          justify-content: flex-start;
 
-      .blueDot {
-         background-image:radial-gradient(circle, #00d7f3, #44dcf4, #61e0f5, #78e5f7, #8ce9f8);;
-         width: 60px;
-         height: 60px;
-         border-radius:100px;
-         margin: 20px;
-         border: 6px solid white;
-         margin: 5px;
+            .dots {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
 
-      }
+            .blueDot {
+                background-image: radial-gradient(circle, #00d7f3, #44dcf4, #61e0f5, #78e5f7, #8ce9f8);
+                ;
+                width: 60px;
+                height: 60px;
+                border-radius: 100px;
+                margin: 20px;
+                border: 6px solid white;
+                margin: 5px;
+            }
 
-      .yellowDot{
-          width: 10px;
-          height: 10px;
-          box-shadow: 0, 0, white;
-          color: yellow;
-          margin:2px;
-          padding: 8px;
-       }
-      .redDot{
-          width: 10px;
-          height: 10px;
-          border-radius: 100px;
-          color: red;
-           margin:2px;
-           padding: 8px;
-      }
-      .greenDot{
-          width: 10px;
-          height: 10px;
-        color: green;
-           margin: 1px;
-           padding: 8px;
-      }
-     .littledot{
-         display:flex;
-         flex-direction:row;
-         justify-content: flex-start;
-         align-content: center;
+            .yellowDot {
+                width: 10px;
+                height: 10px;
+                box-shadow: 0, 0, white;
+                color: yellow;
+                margin: 2px;
+                padding: 8px;
+            }
 
-      }
+            .redDot {
+                width: 10px;
+                height: 10px;
+                border-radius: 100px;
+                color: red;
+                margin: 2px;
+                padding: 8px;
+            }
+
+            .greenDot {
+                width: 10px;
+                height: 10px;
+                color: green;
+                margin: 1px;
+                padding: 8px;
+            }
+
+            .littledot {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-content: center;
+            }
     }
-      .line {
-          border-bottom: 10px solid black;
-         
 
-        
-      }
-     
+        .line {
+            border-bottom: 10px solid black;
+        }
     }
-      .answerScreen {
-          display:flex;
-            flex-direction:column;
-            justify-content: flex-start;;
-            align-items: center; 
+}
+
+        .answerScreen {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            ;
+            align-items: center;
             width: 75%;
             height: 40%;
-            background-color:white;
+            background-color: white;
             clip-path: polygon(0% 0%, 0 84%, 25% 100%, 122% 55%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
             border: 37px solid lightgrey;
             margin: 0 auto;
-            position:relative;
-            top:20px;
+            position: relative;
+            top: 20px;
             font-family: 'pokemon-font', monospace;
             -webkit-font-smoothing: none;
-            font-size:14px;
+            font-size: 14px;
             font-weight: 300;
 
-    
-            
 
-            h3{
-                font-weight: 300; 
+
+
+            h3 {
+                font-weight: 300;
             }
-            
+
             button {
-               border:none;
-               font-weight: 500;
+                border: none;
+                font-weight: 500;
 
             }
 
 
-             li{
+            li {
                 padding: 3px;
                 letter-spacing: 1.2px;
             }
 
-      }
-    
+        }
 
-    .dexSpine{
-        background-image: linear-gradient(to right, #a01a0b, #ae2312, #bc2b19, #ca331f, #d93b26, #dc3c26, #df3c27, #e23d27, #da3621, #d2301b, #ca2915, #c2210f);
-        width: 40px;
-        height:80vh;
-        display:flex;
-        flex-direction:column;
-        justify-content: space-evenly;
+
+        .dexSpine {
+            background-image: linear-gradient(to right, #a01a0b, #ae2312, #bc2b19, #ca331f, #d93b26, #dc3c26, #df3c27, #e23d27, #da3621, #d2301b, #ca2915, #c2210f);
+            width: 40px;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+
+            &>div {
+                background-image: linear-gradient(to right, #a01a0b, #ae2312, #bc2b19, #ca331f, #d93b26, #dc3c26, #df3c27, #e23d27, #da3621, #d2301b, #ca2915, #c2210f);
+
+            }
+
+            .hinge1 {
+                
+                width: 40px;
+                height: 80px;
+                position: relative;
+                border-bottom: 1px solid black;
+                border-top: 1px solid black;
+
+            }
+
+            .hinge2 {
+                background-image: linear-gradient(to right, #a01a0b, #ae2312, #bc2b19, #ca331f, #d93b26, #dc3c26, #df3c27, #e23d27, #da3621, #d2301b, #ca2915, #c2210f);
+                width: 40px;
+                height: 80px;
+                position: relative;
+                border-bottom: 1px solid black;
+                border-top: 1px solid black;
+            }
+
+            .hinge3 {
+                background-image: linear-gradient(to right, #a01a0b, #ae2312, #bc2b19, #ca331f, #d93b26, #dc3c26, #df3c27, #e23d27, #da3621, #d2301b, #ca2915, #c2210f);
+                width: 40px;
+                height: 80px;
+                position: relative;
+                border-bottom: 1px solid black;
+                border-top: 1px solid black;
+            }
+
+            .hinge4 {
+                background-image: linear-gradient(to right, #a01a0b, #ae2312, #bc2b19, #ca331f, #d93b26, #dc3c26, #df3c27, #e23d27, #da3621, #d2301b, #ca2915, #c2210f);
+                width: 40px;
+                height: 80px;
+                position: relative;
+                border: 1px solid black;
+
+            }
+
+        }
+
+.rightDex {
+    background-image: linear-gradient(to left, #a01a0b, #ae2312, #bc2b19, #ca331f, #d93b26, #dc3c26, #df3c27, #e23d27, #da3621, #d2301b, #ca2915, #c2210f);
+    border-left: 2px solid black;
+    height: 80vh;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;    
+    align-items: center;
+    box-shadow: 10px 10px 0px darkred;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    .pokeDataScreen {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
-        
-        .hinge1{
-            background-image: linear-gradient(to right, #a01a0b, #ae2312, #bc2b19, #ca331f, #d93b26, #dc3c26, #df3c27, #e23d27, #da3621, #d2301b, #ca2915, #c2210f);
-            width: 40px;
-            height: 80px;
-            position:relative;
-            border-bottom:1px solid black;
-            border-top:1px solid black;
-          
-        }
-        .hinge2{
-            background-image: linear-gradient(to right, #a01a0b, #ae2312, #bc2b19, #ca331f, #d93b26, #dc3c26, #df3c27, #e23d27, #da3621, #d2301b, #ca2915, #c2210f);
-            width: 40px;
-            height: 80px;
-            position:relative;
-            border-bottom:1px solid black;
-            border-top:1px solid black;
-        }
-        .hinge3{
-            background-image: linear-gradient(to right, #a01a0b, #ae2312, #bc2b19, #ca331f, #d93b26, #dc3c26, #df3c27, #e23d27, #da3621, #d2301b, #ca2915, #c2210f);
-            width: 40px;
-            height: 80px;
-            position:relative;
-            border-bottom:1px solid black;
-            border-top:1px solid black;
-        }
-        .hinge4{
-           background-image: linear-gradient(to right, #a01a0b, #ae2312, #bc2b19, #ca331f, #d93b26, #dc3c26, #df3c27, #e23d27, #da3621, #d2301b, #ca2915, #c2210f);
-            width: 40px;
-            height: 80px;
-            position:relative;
-            border:1px solid black;
-           
-        }
+        width: 70%;
+        height: 27%;
+        background-color: limegreen;
+        -webkit-font-smoothing: none;
+        font-family: 'pokemon-font', monospace;
+        margin: 0 auto;
+        position: relative;
+        top: 40px;
+        border: 1px solid black;
 
+        li {
+            padding: 3px;
+            letter-spacing: 1px;
+        }
+    }
+}
+
+.blueButtonHolder {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: 0 auto;
+
+    .blueBox {
+        background-image: linear-gradient(to right bottom, #224afb, #2149f7, #2049f4, #2048f0, #1f47ed, #1d44e3, #1c40da, #1a3dd0, #1737be, #1331ad, #102b9c, #0c258b);
+        width: 18%;
+        position: relative;
+        top: 90px;
+        height: 50px;
+        border-radius: 10px;
+        margin: 2px;
+        box-shadow: 5px 5px 0px darkblue;
+        transition: box-shadow, 4s, ease-in;
+
+        &:active {
+            box-shadow: 0px 0px 0px darkblue;
+            top: 95px;
+        }
+    }
+}
+
+
+.userInput {
+    margin: 0 auto;
+    position: relative;
+    top: 220px;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+
+    .userInputBox {
+        background-color: white;
+        padding: 2px;
+        font-family: 'pokemon font', monospace;
+        border: none;
+        border-radius: 5px;
+        padding: 5px;
+        margin-bottom: 5px;
+        text-align: center;
+        -webkit-font-smoothing: none;
+
+        &::placeholder {
+            font-family: 'pokemon font', monospace;
+            color: black;
+            -webkit-font-smoothing: none;
+        }
+    }
+}
+
+
+    .pokeButtons {
+        margin: 0 auto;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+
+        .smallRound {
+            position: relative;
+            top: 120px;
+            right: 70px;
+
+            .yellowDot2 {
+                color: yellow;
+                height: 20px;
+                width: 20px;
+
+            }
+
+            .greenDot2 {
+                color: green;
+                height: 20px;
+                width: 20px;
+
+            }
+        }
     }
 
-    .rightDex{
-       background-image: linear-gradient(to left, #a01a0b, #ae2312, #bc2b19, #ca331f, #d93b26, #dc3c26, #df3c27, #e23d27, #da3621, #d2301b, #ca2915, #c2210f);
-          border-left: 2px solid black;
-        height:80vh;
-        width: 35%;
-        display:flex;
-        flex-direction:column;
-        justify-content: flex-start;;
-        align-items: center;
-        box-shadow:10px 10px 0px darkred;
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
-        
-        
-      
-        .pokeDataScreen {
-            display:flex;
-            flex-direction:column;
-            justify-content: center;
-            align-items: center; 
-            width: 70%;
-            height: 27%;
-            background-color:limegreen;
-            -webkit-font-smoothing: none;
-            font-family: 'pokemon-font', monospace;
-            margin: 0 auto;
-            position:relative;
-            top:40px;
-            border: 1px solid black;
 
-            li{
-                padding: 3px;
-                letter-spacing: 1px;
-            }
+.ovalButtons {
+position: relative;
+top: 120px;
+left: 70px;
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+align-items: center;
+
+    .greenOval {
+        position: relative;
+        background-color: green;
+        width: 40px;
+        height: 15px;
+        border-radius: 100px;
+        margin: 5px;
+        transition: box-shadow, 1s, ease-in;
+        box-shadow: 1px 1px 0px darkgreen;
+
+        &:active {
+            box-shadow: 0px 0px 0px darkgreen;
+            top: 1px;
         }
-        
-        .blueButtonHolder{
-            display:flex;
-            flex-direction: row;
-            justify-content:center;
-            align-items:center;
-            flex-wrap:wrap;
-            width: 70%;
-            margin:0 auto;
+    }
 
-            .blueBox{
-               background-image: linear-gradient(to right bottom, #224afb, #2149f7, #2049f4, #2048f0, #1f47ed, #1d44e3, #1c40da, #1a3dd0, #1737be, #1331ad, #102b9c, #0c258b);
-                width: 18%;
-                position:relative;
-                top:90px;
-                height: 50px;
-                border-radius: 10px;
-                margin:2px;
-                box-shadow: 5px 5px 0px darkblue;
-                transition: box-shadow, 4s, ease-in;
+    .orangeOval {
+        position: relative;
+        background-color: orange;
+        width: 40px;
+        height: 15px;
+        border-radius: 100px;
+        margin: 5px;
+        box-shadow: 1px 1px 0px darkorange;
 
-             &:active{
-                    box-shadow: 0px 0px 0px darkblue;
-                    top:95px;
-                }
-            }
+        &:active {
+            box-shadow: 0px 0px 0px darkorange;
+            top: 1px;
         }
-        .userInput{
-            margin:0 auto;
-            position:relative;
-            top: 220px;
-            .userInputBox{
-                background-color: white;
-                padding:2px;
-                font-family:'pokemon font', monospace;
-                border:none; 
-                border-radius:5px;
-                padding: 5px;
-                text-align:center;
-                 -webkit-font-smoothing: none;
-                &::placeholder{
-                    font-family:'pokemon font', monospace;
-                    color:black;
-                      -webkit-font-smoothing: none;
-                }
-            }
-            }
-        
-        
-        .pokeButtons{
-            margin: 0 auto;
-            position:relative;
-            display:flex;
-            flex-direction:row;
-            justify-content: flex-start;
-            
-            .smallRound{
-                position:relative;
-                top: 120px;
-            right: 70px;
-            
-        
+    }
+}
+          
 
-            .yellowDot2{
-                color:yellow;
-                height: 20px;
-                width: 20px;
-               
-            }
-            .greenDot2{
-                color:green;
-                height: 20px;
-                width: 20px;
-             
-            }
-        }  
-        .ovalButtons{
-            position:relative;
-            top:120px;
-            left:70px;
-            display:flex;
-            flex-direction: row;
-            justify-content: flex-start;
-            align-items:center;
+.leftRightButtons {
+    position: relative;
 
-            .greenOval{
-                position:relative;
-                background-color:green;
-                width:40px;
-                height: 15px;
-                border-radius: 100px;
-                margin: 5px;
-                transition: box-shadow, 1s, ease-in;
-                box-shadow: 1px 1px 0px darkgreen;
-                
-                &:active{
-                    box-shadow: 0px 0px 0px darkgreen;
-                     top:1px;
-                }
-
-            }
-
-            .orangeOval{
-                position:relative;
-                background-color:orange;
-                width: 40px;
-                height:15px;
-                border-radius: 100px;
-                 margin: 5px;
-                box-shadow: 1px 1px 0px darkorange;
-
-                &:active{
-                    box-shadow: 0px 0px 0px darkorange;
-                      top:1px;
-                }
-            }
-            
-            
-        }
-    } 
-
-  .leftRightButtons{
-      position:relative;
-    
-    .leftButton{
+    .leftButton {
         width: 45px;
         height: 30px;
-        position:absolute;
+        position: absolute;
         font-size: 28px;
         padding-left: 4px;
         border-radius: 5px;
-        top:150px;
-        bottom:0;
-        left:-170px;
+        top: 150px;
+        bottom: 0;
+        left: -170px;
         border-right: black 1px solid;
-        right:0;
-        background-color:grey;
-        color:red;
+        right: 0;
+        background-color: grey;
+        color: red;
         box-shadow: 2px 2px 0px darkgrey;
 
-         &:active{
-            top:152px;
+        &:active {
+            top: 152px;
             box-shadow: 0px 0px 0px darkgrey;
         }
 
     }
-    .rightButton{
-         width: 45px;
+
+    .rightButton {
+        width: 45px;
         height: 30px;
-        position:absolute;
+        position: absolute;
         font-size: 28px;
         padding-left: 30px;
         border-radius: 5px;
-        top:150px;
-        bottom:0;
-        left:-125px;
-        right:0;
-        background-color:grey;
-        color:red;
+        top: 150px;
+        bottom: 0;
+        left: -125px;
+        right: 0;
+        background-color: grey;
+        color: red;
         box-shadow: 2px 2px 0px darkgrey;
-        
-        &:active{
-            top:152px;
+
+        &:active {
+            top: 152px;
             box-shadow: 0px 0px 0px darkgrey;
         }
     }
 }
-        .yellowArrowButtonContainer{
-            position:relative;
-    
-            .yellowArrowButton{
-               position:relative;
-               top:148px;
-               bottom:0;
-               right:0;
-               left:95px;
-                width: 30px;
-                height: 30px;
-                background-color:yellow;
-                color:red;
-                border-radius:100px;
-                padding-left:7px;
-                font-size:30px;
-                 box-shadow: 1px 1px 0px darkgoldenrod;
 
-                 &:active{
-                    box-shadow: 0px 0px 0px darkgoldenrod; 
-                    top:149px;
-                 }
-               
-            }
+.yellowArrowButtonContainer {
+    position: relative;
+
+    .yellowArrowButton {
+        position: relative;
+        top: 148px;
+        bottom: 0;
+        right: 0;
+        left: 95px;
+        width: 30px;
+        height: 30px;
+        background-color: yellow;
+        color: red;
+        border-radius: 100px;
+        padding-left: 7px;
+        font-size: 30px;
+        box-shadow: 1px 1px 0px darkgoldenrod;
+
+        &:active {
+            box-shadow: 0px 0px 0px darkgoldenrod;
+            top: 149px;
         }
-        .darkRedWrapper{
-            background-color:#c13725;
-            border-top-left-radius:20px;
-            padding-bottom:20px;
-        }
-
-
-
-            button.userSubmit{
-                font-family:'pokemon font', monospace;
-                position:relative;
-                background:darkgrey;
-                border:none;
-                padding:5px;
-                border-radius:5px;
-                -webkit-font-smoothing: none;
-                box-shadow: 1px 1px 0 darkgrey;
-
-                &:active{
-                    box-shadow: 0 0 0 darkgrey;
-                    top:1px;
-                    
-                }
-
-                
-                // <div class="pokeButtons">
-                //         <div class="smallRound">
-                //             <i class="fas fa-circle yellowDot2"></i>
-                //             <i class="fas fa-circle greenDot2"></i>
-                //         </div>
-                
-                //         <div class="ovalButtons">
-                //             <div class="greenOval">
-                //             </div>
-                //             <div class="orangeOval">
-                //             </div>
-                //         </div>
-                //     </div>
-            }
-    .instructionBox{
-        width: 70%;
-        height: 27%;
-        background-color:limegreen;
-        -webkit-font-smoothing: none;
-        font-family: 'pokemon-font', monospace;
-        margin: 0 auto;
-        position:relative;
-        top:40px;
-        border: 1px solid black;
-
-        .instructionBoxContent{
-            margin:23px;
-
-            h4{
-                text-transform:uppercase;
-            }
-        }   
     }
+}
+
+.darkRedWrapper {
+    background-color: #c13725;
+    border-top-left-radius: 20px;
+    padding-bottom: 20px;
+}
+
+button.userSubmit {
+    font-family: 'pokemon font', monospace;
+    position: relative;
+    background: darkgrey;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    -webkit-font-smoothing: none;
+    box-shadow: 1px 1px 0 darkgrey;
+
+    &:active {
+        box-shadow: 0 0 0 darkgrey;
+        top: 1px;
+
+    }
+}
+
+.instructionBox {
+    width: 70%;
+    background-color: limegreen;
+    -webkit-font-smoothing: none;
+    font-family: 'pokemon-font', monospace;
+    margin: 0 auto;
+    position: relative;
+    top: 40px;
+    border: 1px solid black;
+
+    
+
+    .instructionBoxContent {
+        margin: 23px;
+
+        h4 {
+            text-transform: uppercase;
+        }
+    }
+}

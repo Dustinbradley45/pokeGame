@@ -1,0 +1,46 @@
+$lgTablet: "only screen and (max-width: 1070px)";
+$smTablet: "only screen and (max-width: 850px)";
+
+$lgPhone: "only screen and (max-width: 660px)";
+$medPhone: "only screen and (max-width: 500px)";
+
+@media #{$lgTablet} {
+    .instructionBox {
+        width: 90%;
+    }
+}
+@media #{$smTablet} {
+    main {
+        .leftDex {
+            width:50%;
+        }
+
+    }
+            .rightDex {
+                width: 50%;
+            }
+    .instructionBox {
+       
+        width: 95%;
+
+        .instructionBoxContent {
+            margin: 10px;
+        }
+    }
+}
+
+@media #{$lgPhone} {
+    .answerScreen {
+        border: 15px solid lightgrey;
+        width: 85%;
+    }
+}
+
+@media #{$medPhone} {
+    .answerScreen {
+        width: 95%;
+        border: 10px solid lightgrey;
+        height: 35%;
+
+    }
+}
